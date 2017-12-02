@@ -17,7 +17,6 @@
     </form></td>
   </tr>
   <tr>
-    <td><img src="<%=jsppath%>sams/alum_header_test.gif" usemap="#Map2" border="0" height="65" width="285"></td>
   </tr>
 </tbody></table>
 <map name="Map"><area shape="rect" coords="224,97,328,125" href="http://www.uta.edu/oie/contactus/contact.php" alt="Contact Us"><area shape="rect" coords="4,97,108,127" href="http://www.uta.edu/oie/index.php" alt="OIE Home"><area shape="rect" coords="334,94,470,125" href="http://www.uta.edu/" alt="UTA Home"><area shape="rect" coords="111,97,220,124" href="http://www.uta.edu/oie/aboutUs/aboutus.php" alt="About OIE"><area shape="rect" coords="20,50,314,72" href="http://www.uta.edu/oie/index.php" alt="OIE Home"><area shape="rect" coords="22,28,212,41" href="http://www.uta.edu/" alt="UTA Home"><area shape="rect" coords="226,10,313,48" href="http://www.uta.edu/" alt="UTA Home">
