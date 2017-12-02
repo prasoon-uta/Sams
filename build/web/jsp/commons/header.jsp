@@ -8,7 +8,7 @@
     <td rowspan="2" width="473"><img src="<%=jsppath%>sams/main_header_test.gif" usemap="#Map" border="0" height="128" width="473"></td>
     <td background="<%=jsppath%>sams/search.gif" height="63" width="284"><form name="uta-search" method="get" action="http://www.google.com/u/uta">
     <div id="secondary" align="center">
-      <a class="textLink" href="https://owa.uta.edu/">Check E-mail</a> | <a class="textLink" href="http://www2.uta.edu/uta/findpeople.asp">Find People</a>      <br>
+      <a class="textLink" href="https://owa.uta.edu/">Check E-mail</a> | <a class="textLink" href="https://www.uta.edu/uta/find-people/">Find People</a>      <br>
       <input name="domains" value="uta.edu" type="hidden">
       <input name="sitesearch" value="uta.edu" type="hidden">
       <input name="q" id="q" value="Search UTA" onFocus="if(this.value=='Search UTA')value=''" onBlur="if(this.value=='')value='Search UTA';" type="text" size="20">
