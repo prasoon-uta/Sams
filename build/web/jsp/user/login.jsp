@@ -62,7 +62,7 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
         <td  bgcolor="#FFFFFF"><img src="<%=request.getContextPath()%>/jsp/user/login_images/login_image.jpg" width="169" height="194">          </td>
         <td >
 		<!--<form name="form1" action="/Sams/jsp/user/login_msg.jsp" method="post">-->
-	    <form name="form1" action='<%= response.encodeURL("j_security_check") %>' method="post" onsubmit="return(countit());">	
+	   <form action="${pageContext.request.contextPath}/GetUserServlet" method="get">	
             <table width="200" border="0" cellpadding="5" cellspacing="0" bordercolor="#666666">
             <tr bordercolor="#ffffff">
               <td  class="heading" align="right">Login</td>
@@ -85,6 +85,39 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
 	  </tr>
     </table>
     
+            
+<table width="350" height="128" border="1" cellpadding=0 cellspacing=0 bordercolor="#990000">
+      <tr>
+        
+		<td height="21" colspan=2 bgcolor="#990000">&nbsp;</td>
+		
+      </tr>
+      <tr bordercolor="#ffffff">
+        <td  bgcolor="#FFFFFF"><img src="<%=request.getContextPath()%>/jsp/user/login_images/login_image.jpg" width="169" height="194">          </td>
+        <td >
+		<!--<form name="form2" action="/Sams/jsp/user/login_msg.jsp" method="post">-->
+	    <form name="form2" action='<%= response.encodeURL("j_security_check") %>' method="post" onsubmit="return(countit());">	
+            <table width="200" border="0" cellpadding="5" cellspacing="0" bordercolor="#666666">
+            <tr bordercolor="#ffffff">
+              <td  class="heading" align="right">User</td>
+			  <td width="10"><b>:</b></td>
+              <td width="124" bgcolor="#FFFFFF"><input type="text" name="j_username" size="15"></td>
+            </tr>
+            <tr bordercolor="#ffffff">
+              <td class="heading" align="right">Password</td>
+			  <td width="10"><b>:</b></td>
+              <td><input type="password" name="j_password" size="15"></td>
+            </tr>
+            <tr bordercolor="#ffffff">
+              <td colspan="3" align="center"><input type="submit" class="buttonclass" value="Register" >
+              &nbsp;<input type="reset" value="reset"></td>
+             
+            </tr>
+          </table>
+		  </form>
+		   </td>
+	  </tr>
+    </table>
     
     </td></tr>
 </table>
