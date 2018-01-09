@@ -23,10 +23,25 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     <script type="text/javascript">
+        
+        alert("Program Updated Successfully");
      function countit()
     {
        formcontent=document.getElementById('j_password').value
        if(formcontent.length < 6)
+       {  
+            alert("password cannot be lessthan six characters");
+            return false;
+        }
+       else 
+            return true;
+        
+     }
+       function regvalidate()
+    {
+        
+       var regcontect=document.getElementById('j_passwordr').value
+       if(regcontect.length < 6)
        {  
             alert("password cannot be lessthan six characters");
             return false;
@@ -61,63 +76,13 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
       <tr bordercolor="#ffffff">
         <td  bgcolor="#FFFFFF"><img src="<%=request.getContextPath()%>/jsp/user/login_images/login_image.jpg" width="169" height="194">          </td>
         <td >
-		<!--<form name="form1" action="/Sams/jsp/user/login_msg.jsp" method="post">-->
-	   <form action="${pageContext.request.contextPath}/GetUserServlet" method="get">	
-            <table width="200" border="0" cellpadding="5" cellspacing="0" bordercolor="#666666">
-            <tr bordercolor="#ffffff">
-              <td  class="heading" align="right">Login</td>
-			  <td width="10"><b>:</b></td>
-              <td width="124" bgcolor="#FFFFFF"><input type="text" name="j_username" size="15"></td>
-            </tr>
-            <tr bordercolor="#ffffff">
-              <td class="heading" align="right">Password</td>
-			  <td width="10"><b>:</b></td>
-              <td><input type="password" name="j_password" size="15"></td>
-            </tr>
-            <tr bordercolor="#ffffff">
-              <td colspan="3" align="center"><input type="submit" class="buttonclass" value="submit" >
-              &nbsp;<input type="reset" value="reset"></td>
-             
-            </tr>
-          </table>
-		  </form>
+		<!--<form name="form1" action="/Sams/jsp/user/.jsp" method="post">-->
+	Welcome Sam !
 		   </td>
 	  </tr>
     </table>
     
-            
-<table width="350" height="128" border="1" cellpadding=0 cellspacing=0 bordercolor="#990000">
-      <tr>
-        
-		<td height="21" colspan=2 bgcolor="#990000">&nbsp;</td>
-		
-      </tr>
-      <tr bordercolor="#ffffff">
-        <td  bgcolor="#FFFFFF"><img src="<%=request.getContextPath()%>/jsp/user/login_images/login_image.jpg" width="169" height="194">          </td>
-        <td >
-		<!--<form name="form2" action="/Sams/jsp/user/login_msg.jsp" method="post">-->
-	    <form name="form2" action='<%= response.encodeURL("j_security_check") %>' method="post" onsubmit="return(countit());">	
-            <table width="200" border="0" cellpadding="5" cellspacing="0" bordercolor="#666666">
-            <tr bordercolor="#ffffff">
-              <td  class="heading" align="right">User</td>
-			  <td width="10"><b>:</b></td>
-              <td width="124" bgcolor="#FFFFFF"><input type="text" name="j_username" size="15"></td>
-            </tr>
-            <tr bordercolor="#ffffff">
-              <td class="heading" align="right">Password</td>
-			  <td width="10"><b>:</b></td>
-              <td><input type="password" name="j_password" size="15"></td>
-            </tr>
-            <tr bordercolor="#ffffff">
-              <td colspan="3" align="center"><input type="submit" class="buttonclass" value="Register" >
-              &nbsp;<input type="reset" value="reset"></td>
-             
-            </tr>
-          </table>
-		  </form>
-		   </td>
-	  </tr>
-    </table>
+
     
     </td></tr>
 </table>

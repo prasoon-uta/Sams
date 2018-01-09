@@ -191,39 +191,5 @@ Good luck - Angus.
   <a href="javascript:void(0)" onClick="displaySubs('sub2')" onFocus="if(this.blur)this.blur()" ;=""> 
   <img src="<%=jsppath%>sams/arrow_bullet.gif" border="0" height="21" width="22"> 
   <strong>User Management </strong></a> 
-  <div id="sub2" style="display: none;"> 
-    <table align="center">
-      <tbody><tr> 
-        <td width="25"></td>
-        <td> <li><a href="#"> 
-            <div class="sublist">Create User Profile</div>
-            </a></li>
-			<li><a href="#"> 
-            <div class="sublist">Update User Profile</div>
-            </a></li>
-			<li><a href="#"> 
-            <div class="sublist">Delete User Profile</div>
-            </a></li>
-		
-         </td>
-      </tr>
-    </tbody></table>
-  </div>
-  
-   <a href="javascript:void(0)" onClick="displaySubs('sub3')" onFocus="if(this.blur)this.blur()" ;=""> 
-  <img src="<%=jsppath%>sams/arrow_bullet.gif" border="0" height="21" width="22"> 
-  <strong>Edit System Settings </strong></a>
-   <div id="sub3" style="display: none;"> 
-    <table align="center">
-      <tbody><tr> 
-        <td width="25"></td>
-        <td> 
-		     <li><a href="#"> 
-            <div class="sublist">Edit Settings</div>
-            </a></li>
-               			      
-			</td>
-      </tr>
-    </tbody></table>
-  </div>
+
  

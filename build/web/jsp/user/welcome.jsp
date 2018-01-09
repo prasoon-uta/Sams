@@ -19,15 +19,7 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
    "http://www.w3.org/TR/html4/loose.dtd">
  
-        <%
-          String user=request.getRemoteUser();
-           System.out.println("j_username>>>>>"+request.getParameter("j_username"));
-           userbean.setUsername(user);
-           //userbean.setPassword(request.getParameter("j_password"));
-   UserController usercontroller=new UserController();
-   UserBean ub=usercontroller.check(userbean);
-           
-%>
+ 
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -76,16 +68,12 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
  </td>
 <td style="padding-left:5px" height="425">
  
-<% if(ub!=null){
-        request.getSession().setAttribute("user",ub); %>
+
          <table width="100%" border="0" cellspacing="5" name="formTable">
     <caption align="top" class="style1">
        <tr >
-            <% String name=""; 
-			if(session.getAttribute("user")!=null)name=((UserBean)session.getAttribute("user")).getUsername(); 
-            name=request.getRemoteUser();
-            %>
-        <td  width="50%" bgcolor="#FFFFFF" ><span class="style1">Welcome <%=name%></span><span class="style2">.</span> </td>
+            
+        <td  width="50%" bgcolor="#FFFFFF" ><span class="style1">Welcome Guest</span><span class="style2">.</span> </td>
         <td  width="50%" bgcolor="#FFFFFF" align="right" class="style1"><a href="/Sams/jsp/user/logoff.jsp">Sign Out </a></td>
       </tr>
 	  <tr>
@@ -99,15 +87,7 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
        <tr><td colspan="2"><img src="login_images/map.jpg" width="460"></img></td></tr>
    </table>
   
-       
-   <%}else{%>
-  <table width="100%" border="0" cellspacing="5"  name="formTable">
-       <tr><td align="center"><img src="login_images/oops.jpg" ></img></td></tr>
-        <tr><td align="center" class="errorcode">Sorry Login Failed !!!</td></tr>
-       <tr><td  align="center"class="style1"> Contact the Administrator for login details</td></tr>
-   </table>
   
-  <%}%>
    
     
     <%--
